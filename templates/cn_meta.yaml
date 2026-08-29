@@ -8,8 +8,9 @@ proxy-groups:
     type: select
     proxies:
       - 自动选择
-      - <countries>
       - 手动切换
+      - 自建节点
+      - <countries>
       - DIRECT
   - name: 手动切换
     type: select
@@ -22,6 +23,11 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
+  - name: 自建节点
+    type: select
+    proxies:
+      - hqe-HK
+      - factrue-SG
   - name: 游戏平台（中国）
     type: select
     proxies:
