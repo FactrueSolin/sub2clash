@@ -8,12 +8,20 @@ proxy-groups:
     type: select
     proxies:
       - <countries>
+      - 自动选择
       - 手动切换
       - DIRECT
   - name: 手动切换
     type: select
     proxies:
       - <all>
+  - name: 自动选择
+    type: url-test
+    proxies:
+      - <countries>
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
   - name: 游戏平台（中国）
     type: select
     proxies:
