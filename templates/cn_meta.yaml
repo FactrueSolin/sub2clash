@@ -7,8 +7,8 @@ proxy-groups:
   - name: 节点选择
     type: select
     proxies:
-      - <countries>
       - 自动选择
+      - <countries>
       - 手动切换
       - DIRECT
   - name: 手动切换
